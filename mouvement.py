@@ -7,6 +7,10 @@ class Player():
         anim_forward = []
         anim_backward = []
         anim_jump = []
+        self.damage = 10
+        self.health = 30
+        self.level = 1
+        self.xp = 0
     def left():
         velocity_x -= 1
     def right():
@@ -15,4 +19,8 @@ class Player():
         velocity_y += 1
     def down():
         velocity_y -= 1
+
+    
+    
+        
 
