@@ -1,6 +1,4 @@
 from typing import Self
-import xdrlib
-
 import pygments
 from pyparsing import White
 

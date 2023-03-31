@@ -1,6 +1,7 @@
 import pygame 
 pygame.init()
 
+running = True
 
 class rat():
     def __init__(self, x, y):
