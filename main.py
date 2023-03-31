@@ -1,7 +1,9 @@
 from mouvement import Player 
 
- 
- 
+
+
+
+
 
 pygame.init()  
 
@@ -10,7 +12,7 @@ pygame.init()
 
   
 
-screen_dim = (1300,650)  
+screen_dim = (1300,650)
 
  
  
@@ -51,25 +53,7 @@ while running:
 
                 running = False  
 
-    
 
-    keys = pygame.key.get_pressed() 
-
-    if keys[pygame.K_LEFT]: 
-
-         Player.left() 
-
-    if keys[pygame.K_RIGHT]: 
-
-         Player.right() 
-
-    if keys[pygame.K_UP]: 
-
-         Player.up() 
-
-    if keys[pygame.K_DOWN]: 
-
-         Player.down() 
 
  
  
