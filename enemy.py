@@ -8,8 +8,12 @@ running = True
 class rat():
     def __init__(self, x, y):
         super().__init__()
-        self.image = pygments.Surface((50, 50))
-        self.image.fill(White)
+        self.image = pygame.image.load("rat1.zip")
+        self.image = pygame.transform.scale(self.image, (60, 60))
+        self.image = pygame.transform.flip(self.image, False, True)
+        self.rect = self.image.get_rect()
+        self.rect.x = 500 - int(self.rect.width / 2)
+        self.rect.y = 150 - int(self.rect.width / 2)
         self.x = x
         self.y = y
         hp = 40
